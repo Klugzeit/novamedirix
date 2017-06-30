@@ -248,6 +248,27 @@ header .contact-info::before {
   }
 }
 
+#box01 {
+  margin-top: 30px;
+  padding: 0 0 0 0;
+  text-align: justify;
+}
+
+.container01 {
+  padding: 0 0 0 30px;
+}
+
+.container02 {
+  padding: 0 0 0 40px;
+}
+
+.ne00 {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
@@ -518,8 +539,9 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 .owl-controls .owl-buttons .owl-next {right: 10px;top: 50%;}
 .owl-carousel{margin-bottom: 20px;}
 .owl-carousel .owl-buttons div i {font-size: 40px;margin: -20px 0 0;}
+
 .owl-carousel .item {
-  width:800px; 
+  width: 100%; 
   position: relative; 
   margin-right: auto; 
   margin-left: auto;
@@ -528,7 +550,7 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
   @media screen and (max-width:1216px){
     .owl-carousel .item {
       width:100%; 
-      position: absolute; 
+      position: relative; 
       margin-right: auto; 
       margin-left: auto;
     }
