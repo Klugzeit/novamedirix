@@ -620,3 +620,64 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 	height: 2px;
 	background-color: gray;
 }
+
+#vacunacion  {
+	text-align: center;
+}
+
+#vacunacion img {
+	max-width: 300px;
+	max-height: 150px;
+}
+
+#vacunacion h2 {
+	font-size: 1em;
+}
+#medicamentos {
+	text-align: center;
+}
+#tablade {
+	
+}
+
+#tablade h3 {
+	color: gray;
+}
+
+.derecha {
+	text-align: right;
+}
+.espacio {
+	padding: 0em 2em;
+}
+
+#medio img {
+	max-height: 150px;
+}
+#medio {
+	text-align: center;
+}
+
+#medios img {
+	max-height: 150px;
+	max-width: 200px;
+	
+	
+}
+#medios {
+	text-align: center;
+}
+
+#equipa img {
+	max-height: 50px;
+	max-width: 150px;
+}
+#equipa p {
+	
+}
+
+#anti {
+	
+	text-align: center;
+}
+	
