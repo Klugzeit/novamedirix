@@ -13,11 +13,11 @@ if(isset($_POST['submitcontact']))
 	$to = "youremail@gmail.com";
 	$subject = "Zerotheme - Testing Contact Form";
 	$message = " Name: " . $name ."\r\n Email: " . $email . "\r\n Message:\r\n" . $message;
-	 
+
 	$from = "Zerotheme.com";
 	$headers = "From:" . $from . "\r\n";
-	$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
-	 
+	$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
+
 	if(@mail($to,$subject,$message,$headers))
 	{
 	  $text = "<span style='color:blue; font-size: 35px; line-height: 40px; margin: 10px;'>Your Message was sent successfully !</span>";
@@ -38,20 +38,20 @@ if(isset($_POST['submitcontact']))
 	<title>zHairSalon - Free Salon Html5 Templates</title>
 	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
 	<meta name="author" content="www.zerotheme.com">
-	
+
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="css/zerogrid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
-	
+
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
+
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/script.js"></script>
 
@@ -66,7 +66,7 @@ if(isset($_POST['submitcontact']))
 		<script src="js/html5.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
-    
+
 </head>
 
 <body class="archive-page">
@@ -100,26 +100,37 @@ if(isset($_POST['submitcontact']))
 				<!---Top Menu--->
 				<div id="cssmenu" >
 					<ul>
-					   <li><a href="index.html"><span>zHairSalon</span></a></li>
-					   <li class="has-sub"><a href="#"><span>Category</span></a>
+					   <li class="active"><a href="index.html"><span>Home</span></a></li>
+					   <li class="last"><a href="quienes-somos.html"><span>Quienes somos</span></a></li>
+						 <li class="has-sub"><a href="productos.html"><span>Productos</span></a>
 						  <ul>
-							 <li class="has-sub"><a href="#"><span>Item 1</span></a>
-								<ul>
-								   <li><a href="#"><span>Sub Item</span></a></li>
-								   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-								</ul>
-							 </li>
-							 <li class="has-sub"><a href="#"><span>Item 2</span></a>
-								<ul>
-								   <li><a href="#"><span>Sub Item</span></a></li>
-								   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-								</ul>
-							 </li>
+								<li class="last"><a href="vacunacion.html"><span>Vacunación</span></a></li>
+								<li class="last"><a href="diabates.html"><span>Diabetes</span></a></li>
+								<li class="last"><a href="medicamentos.html"><span>Medicamentos</span></a></li>
+								<li class="last"><a href="material-medico.html"><span>Material Médico</span></a></li>
+								<li class="last"><a href="material-curacion.html"><span>Material de Curación</span></a></li>
+								<li class="last"><a href="laboratorio.html"><span>Laboratorio</span></a></li>
+								<li class="last"><a href="equipamiento.html"><span>Equipamiento</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Anticonceptivos</span></a></li>
 						  </ul>
 					   </li>
-					   <li><a href="archive.html"><span>Archive</span></a></li>
-					   <li><a href="single.html"><span>About</span></a></li>
-					   <li class="last active"><a href="contact.html"><span>Contact</span></a></li>
+						 <li class="has-sub"><a href="productos.html"><span>Servicios</span></a>
+						  <ul>
+								<li class="last"><a href="sidevacunacion.html"><span>Servicio Integral de Vacunación</span></a></li>
+								<li class="last"><a href="diabates.html"><span>Servicio Integral de Esterilización</span></a></li>
+								<li class="last"><a href="medicamentos.html"><span>Servicio Integral de Ventilación y Arrendamiento</span></a></li>
+								<li class="last"><a href="material-medico.html"><span>Servicio Integral de Laboratorio</span></a></li>
+								<li class="last"><a href="material-curacion.html"><span>Servicio Integral de Anestesia</span></a></li>
+								<li class="last"><a href="laboratorio.html"><span>Servicio Integral de Tomografía</span></a></li>
+								<li class="last"><a href="equipamiento.html"><span>Servicio Integral Sobrepeso, Obesidad y Diabetes</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Servicio Integral de Hemodiálisis</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Servicio Integral de Cardiología</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Servicio Integral de Oncología</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Servicio Integral de Neurocirugía</span></a></li>
+								<li class="last"><a href="anticonceptivos.html"><span>Otros Servicios Integrales</span></a></li>
+						  </ul>
+					   </li>
+					   <li class="last"><a href="contact.html"><span>Contacto</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -244,7 +255,7 @@ if(isset($_POST['submitcontact']))
 			</div>
 		</footer>
 	</div>
-	
+
 	<!-- Google Map -->
 	<script>
 	  var marker;
@@ -274,7 +285,7 @@ if(isset($_POST['submitcontact']))
             ]
           }
         ];
-		
+
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,
           scrollwheel: false,
@@ -297,7 +308,7 @@ if(isset($_POST['submitcontact']))
         });
 		marker.addListener('click', toggleBounce);
       }
-	  
+
 	  function toggleBounce() {
         if (marker.getAnimation() !== null) {
           marker.setAnimation(null);
@@ -307,6 +318,6 @@ if(isset($_POST['submitcontact']))
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
-	
+
 </body>
 </html>
