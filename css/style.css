@@ -139,6 +139,24 @@ header .fa-twitter {
   line-height: 20px;
   position: relative;
   }
+  
+  header .fa-youtube{
+  padding: 0 25px 0 0;
+  color: #acb4b6;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 20px;
+  position: relative;
+  }
+
+header .fa-instagram {
+  padding: 0 25px 0 0;
+  color: #acb4b6;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 20px;
+  position: relative;
+}
 
 header .contact-info::before {
   font-size: 23px;
@@ -183,7 +201,7 @@ header .contact-info::before {
 
 #logo {
   margin: 15px 0 0 0;
-  width: 350px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -246,6 +264,17 @@ header .contact-info::before {
     padding: 0 18px 0 0;
     float: right;
   }
+  header .fa-youtube {
+    font-size: 18px;
+    padding: 0 10px 0 0;
+    float: right;
+  }
+
+  header .fa-instagram {
+    font-size: 18px;
+    padding: 0 18px 0 0;
+    float: right;
+}
 }
 
 #box01 {
@@ -345,6 +374,7 @@ article:last-child{border-bottom: none;padding-bottom: 0;}
 article:after, article:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 article .art-header{margin-bottom: 20px;}
 article .art-header h3{font-size: 28px;color: #111;}
+article .art-header img{width:70%; display:block;margin:0 auto 0 auto; }
 
 #imageproduct {
     width: 50%;
@@ -530,11 +560,11 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 .crumbs ul li a:hover:after {border-left-color: #222;}
 .crumbs ul li a:hover:after {border-left-color: #222;}
 
-/* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------owl-slide---------------- */
 /* ----------------------------------Carousel---------------------------------- */
 /* ---------------------------------------------------------------------------- */
 .owl-controls .owl-buttons div {position: absolute;color:#777;opacity: 0.7;}
-.owl-carousel:hover .owl-buttons div {color:#fff;}
+.owl-carousel:hover .owl-buttons div {color: black;}
 .owl-controls .owl-buttons .owl-prev {left: 10px;top: 50%;}
 .owl-controls .owl-buttons .owl-next {right: 10px;top: 50%;}
 .owl-carousel{margin-bottom: 20px;}
@@ -561,9 +591,9 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 .carousel-caption-title {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .carousel-caption-title a:hover {color: #628d7c;}
 .carousel-caption-category {margin: 0;padding: 0;}
-.carousel-caption-category a {color: #aaaaaa;font-size: 14px;font-size: 0.875em;letter-spacing: .5px;text-transform: lowercase;}
+.carousel-caption-category a {color: black;font-size: 1em;font-size: 1.5em;letter-spacing: .5px;}
 .carousel-caption-category a:hover {color: #628d7c;}
-.carousel-caption-inner {background: #fff;padding: 30px 40px;max-width: 80%;margin: 0 auto;display: inline-block;}
+.carousel-caption-inner {background: rgba(255, 255, 255, 0.8);padding: 30px 40px;max-width: 80%;margin: 0 auto;display: inline-block;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------PRODUCTS------------------------------ */
@@ -680,4 +710,31 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 	
 	text-align: center;
 }
+
+#bienvenidos {
+	width: 80%;
+}
+#valores {
+	text-align: center;
+}
+#valores img{
+	width: 40%;
+	max-width: 150px;
+	display:block;margin:0 auto 0 auto;
+
 	
+}
+
+.izqui {
+	float: right;
+}
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#fff; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+	.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#fff; }
