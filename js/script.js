@@ -11,6 +11,8 @@ $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 		}
 	});
 });
+
+
 } )( jQuery );
 
 $(document).ready(function () {
@@ -27,8 +29,6 @@ $(document).ready(function () {
     });
 
     ResCarouselSize();
-
-
 
 
     $(window).resize(function () {
